@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教师工作感想采访-民族中学新闻网</title>
+    <meta name="description" content="不同工作时长教师对教育工作的感想和反思">   
+    <style>
+        /* 基础页面样式 */
+        body {
+            font-family: '微软雅黑', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+
+        /* 教师信息板块样式 */
+        .teacher-profile {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        /* 教师图片样式 */
+        .teacher-img {
+            width: 200px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 8px;
+            background-color: #eee;
+            flex-shrink: 0;
+        }
+
+        /* 教师信息内容样式 */
+        .teacher-info {
+            flex: 1;
+        }
+
+        .teacher-info h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .teacher-info p {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .teacher-info .work-experience {
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+
+        /* 学科标签样式 */
+        .subject-tag {
+            display: inline-block;
+            background: #7f8c8d;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* 声明样式 */
+        .statement-box {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .statement-box p {
+            background: #FF7F50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .teacher-profile {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .teacher-img {
+                width: 100%;
+                max-width: 300px;
+                height: 300px;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background-color: #f0f8ff; /* 极浅的蓝色背景 */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 导航栏样式  */
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 82, 164, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 70px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-logo {
+            color: #0056b3;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: #007bff; }
+
+        /* 简介页面样式 */
+        .intro-container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px 60px;
+        }
+        .intro-card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 82, 164, 0.08);
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+        }
+        h2 {
+            color: #007bff;
+            margin: 25px 0 15px;
+            font-size: 1.4rem;
+        }
+        p {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            text-indent: 2em; 
+        }
+
+        /* 返回按钮 */
+        a.back-btn {
+            display: inline-block;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        a.back-btn:hover { background-color: #0056b3; }
+
+        /* 版权 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="nav-logo">民族中学新闻网</a >
+        <div class="nav-links">
+            <a href="index.html">首页</a >
+            <a href="jianjie.html">学校简介</a >
+            <a href=" https://v.douyin.com/2gelpXB0w8s/ 8@3.com :4pm">学校抖音</a >
+            <a href="dongzhouhao.html">网站简介（必看）</a >
+        </div>
+    </nav>
+    <h1>教师心声：你有什么感想？</h1>
+    <p class="intro-text">2026年9月18至19日，我校八四班同学们好奇老师的职业生涯，便主动采访了几位不同的老师，随后利用课后时间整理了采访结果。来看看有没有解答你的疑惑呢？</p >
+
+    <!-- 第一位教师板块 -->
+    <div class="teacher-profile">
+        <div class="teacher-img" style="display: flex; align-items: center; justify-content: center; color: #aaa;">暂无照片</div>
+        <div class="teacher-info">
+            <h2>张学感老师</h2>
+            <p class="work-experience">工作时长：15年</p >
+            <span class="subject-tag">学科：地理</span>
+            <p><strong>为什么当老师：</strong>对我影响最大的是我的父亲。父亲离世这件事，在我的人生里留下很深的印记。也正是那段时期，我观察到伏案认真批改作业的老师，那个认真专注的模样，让我觉得做老师是一件很酷的事情。也是这份触动，让我坚定了要站在讲台，做一名守护学生的教师。</p >
+            <p><strong>教书的感想：</strong>教育不能靠主观猜测。对待每一个孩子，要多一份耐心与共情，先倾听，再评判。温柔不是纵容，而是愿意俯下身，看见每个学生背后的难处。无论是从前的语文课堂，还是现在的地理课堂，我都希望不只传授课本上的知识，也能够照顾到孩子们内心的情绪，守护他们成长。</p >
+            <p><strong>与学生的故事：</strong>有一件事，我至今印象很深。曾经班里有一位学生，上学的时候拎着一个米袋子当作装书本的袋子。我当时主观臆断，以为孩子是标新立异，故意博取同学们的关注，就批评教育了他。后来我才了解真相：那个孩子根本没有属于自己的书包，米袋子就是他仅有的装书工具。得知实情之后，我的心里十分愧疚，为自己没有先了解情况就教训学生感到懊悔。之后我专门为这位学生购置了一个小书包送给他。这件事时刻提醒我，看待学生不能只看表面现象，一定要多去了解孩子背后的处境。</p >
+        </div>
+    </div>
+
+    <!-- 第二位教师板块 -->
+    <div class="teacher-profile">
+        <img src="lisong.jpg"width="200px">
+        <div class="teacher-info">
+            <h2>李松老师</h2>
+            <p class="work-experience">工作时长：1年</p >
+            <span class="subject-tag">学科：数学</span>
+            <p><strong>感想：</strong>教书很苦、很累。遇到学生不听话、不完成作业的时候，我也会比较生气。但也会有很多开心时刻，比如收到学生送给我的贺卡。一路走来，我的感悟可以总结成四个字：顺其自然。
+</p >
+            <p><strong>对将来想当老师的人的意见：</strong>如果有人告诉我他想当老师，我会跟他说，当老师很苦很累，但同样也很有成就感。不要害怕苦和累，倘若还没有开始就打退堂鼓，那才是真正的失败</p >
+            <p><strong>教学宗旨：</strong>我的教学宗旨简单来说就是真心换真心。我真心传授知识，也希望学生能够真心地去汲取知识。</p >
+        </div>
+    </div>
+
+    <!-- 声明信息 -->
+    <div class="statement-box">
+        <p>声明：以上信息均已获本人同意</p >
+    </div>
+
+    <footer>
+        <p>&copy;网站编辑人 版权所有 | 内容由管理员修改 此网站非官方网站，请仔细辨别</p >
+    </footer>
+</body>
+</html>

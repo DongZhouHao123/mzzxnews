@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页-民族中学新闻网</title>
+    <style>
+        /* 全局样式与白蓝色调背景 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background-color: #f0f8ff; /* 极浅的蓝色背景 (AliceBlue) */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* 1. 导航栏样式 */
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 82, 164, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            height: 70px;
+            position: sticky; /* 滚动时导航栏固定在顶部 */
+            top: 0;
+            z-index: 100;
+        }
+        .nav-logo {
+            color: #0056b3;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* 2. 轮播图样式 */
+        .carousel {
+            position: relative;
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 82, 164, 0.1);
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            animation: slide 8s infinite; /* 自动播放间隔 */
+        }
+        .carousel-item {
+            min-width: 100%;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .item-1 { background-image: linear-gradient(rgba(255, 6, 6, 0.7), rgba(148, 3, 3, 0.986)), url('fukan.jpg'); background-color: #ff0909; }
+        .item-2 { background-image: linear-gradient(rgba(255, 6, 6, 0.7), rgba(148, 3, 3, 0.986)), url('fukan2.jpg'); background-color: #ff8800; }
+        .item-3 { background-image: linear-gradient(rgba(255, 6, 6, 0.7), rgba(148, 3, 3, 0.986)), url('你的图片3地址.jpg'); background-color: #ff0707; }
+
+        /* 轮播图动画关键帧 */
+        @keyframes slide {
+            0%, 28% { transform: translateX(0); }
+            33%, 61% { transform: translateX(-100%); }
+            66%, 94% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* 内容区域样式 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+        .content-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 82, 164, 0.08);
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+        a.btn {
+            display: inline-block;
+            color: #ffffff;
+            background-color: #007bff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+        a.btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* 底部版权信息 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href=" " class="nav-logo">民族中学新闻网</a >
+        <div class="nav-links">
+            <a href="index.html">首页</a >
+            <a href="jianjie.html">学校简介</a >
+            <a href=" https://v.douyin.com/2gelpXB0w8s/ 8@3.com :4pm">学校抖音</a >
+            <a href="dongzhouhao.html">网站简介（必看）</a >
+        </div>
+    </nav>
+
+    <!-- 轮播图区域 -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item item-1">欢迎来到民族中学</div>
+            <div class="carousel-item item-2">2026秋季学期开学典礼</div>
+            <div class="carousel-item item-2">2026校园文艺晚会</div>
+        </div>
+    </div>
+
+    <!-- 内容区块 -->
+    <div class="container">
+        <div class="content-card">
+            <h2>学校晚会</h2>
+            <p>“石榴花开映校园 同心携手向未来”主题晚会圆满落幕</p >
+            <a href="https://mp.weixin.qq.com/s/k4RiGJREmaez000_Pmfvjw" class="btn" target="_blank">查看详情</a >
+            <a href="https://v.douyin.com/LA94Vv0D8WY/ 12/13 r@E.Hv PxS:/ :7pm " class="btn" target="_blank">相关视频</a >
+            </div>
+
+        <div class="content-card">
+            <h2>教师采访</h2>
+            <p>2026教师采访。</p >
+            <a href="news1.HTML" class="btn" target="_blank">查看详情</a >
+        </div>
+        <div class="content-card">
+            <h2>学校趣事</h2>
+            <a href="wall.html" class="btn" target="_blank">查看详情</a >
+            <a href="!wall!.html" class="btn" target="_blank">投稿须知</a >
+        </div>
+        <div class="content-card">
+            <h2>开学典礼</h2>
+            <p>2026年9月12日民族中学开学典礼圆满完成。</p >
+            <a href="https://mp.weixin.qq.com/s/QL5GuiSwxPwbcpTCY1lYNw" class="btn" target="_blank">查看详情</a >
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 网站编辑人 版权所有 | 内容由管理员修改 此网站非官方网站，请仔细辨别</p >
+    </footer>
+
+</body>
+</html>
