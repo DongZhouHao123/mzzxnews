@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
+<head><style>
+  /* 将 Emote 评论区的标题替换为中文 */
+  .emote-comments-title::after {
+    content: "用户评论";
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .emote-comments-title {
+    font-size: 0 !important; /* 隐藏原有的英文标题 */
+  }
+
+  /* 将输入框的占位提示文字替换为中文 */
+  .emote-comments-input::placeholder {
+    content: "写下你的评论..." !important;
+    color: #999;
+  }
+
+  /* 将提交按钮的文字替换为中文 */
+  .emote-comments-submit {
+    font-size: 0 !important;
+  }
+  .emote-comments-submit::after {
+    content: "发表评论";
+    font-size: 14px;
+  }
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>学校趣事 - 民族中学新闻网</title>
