@@ -117,56 +117,8 @@
             <p></p>
             <h1>每周趣事</h1>
         </div>
-        <!-- 1. 评论展示区 -->
-<div id="comments-container" style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px;">
-  <h3>用户评论</h3>
-  <div id="comments-list">加载中...</div>
-</div>
-
-<!-- 2. 您之前的评论表单（保持不变） -->
-<form name="comments" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-  <input type="hidden" name="form-name" value="comments" />
-  <div style="display: none;">
-    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-  </div>
-  <div style="margin-bottom: 10px;">
-    <label for="name">昵称：</label><br>
-    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; box-sizing: border-box;" placeholder="请输入您的昵称">
-  </div>
-  <div style="margin-bottom: 10px;">
-    <label for="message">评论内容：</label><br>
-    <textarea id="message" name="message" rows="4" required style="width: 100%; padding: 8px; box-sizing: border-box;" placeholder="写下您的评论..."></textarea>
-  </div>
-  <button type="submit" style="padding: 10px 20px; cursor: pointer;">提交评论</button>
-</form>
-
-<!-- 3. 渲染评论的 JavaScript -->
-<script>
-  async function loadComments() {
-    try {
-      const response = await fetch('/.netlify/functions/get-comments');
-      if (!response.ok) throw new Error('Failed to load comments');
-      const comments = await response.json();
-
-      const container = document.getElementById('comments-list');
-      if (comments.length === 0) {
-        container.innerHTML = '<p>暂无评论，快来抢沙发吧！</p>';
-        return;
-      }
-
-      container.innerHTML = comments.map(c => `
-        <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
-          <strong>${c.name}</strong> <span style="color: #888; font-size: 0.8em;">${new Date(c.created_at).toLocaleString()}</span>
-          <p style="margin: 5px 0 0;">${c.message}</p>
-        </div>
-      `).join('');
-    } catch (error) {
-      document.getElementById('comments-list').innerHTML = '<p>评论加载失败</p>';
-    }
-  }
-
-  // 页面加载时获取评论
-  window.onload = loadComments;
+        <script defer src="https://i.emote.com/js/emote.js"></script>
+        <div id="emote_com"></div>
 </script>
     </div>
 
